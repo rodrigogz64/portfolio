@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const nostrLink = document.querySelector(".home-sci a:first-child");
 
-  nostrLink.addEventListener("click", function(event) {
+  nostrLink.addEventListener("click", function (event) {
     event.preventDefault();
-    copyTextToClipboard("npub1s4qx7qajsua9nykemks284y96768t7uyh2vgmttykw6lnfg0xpzqptgcuv");
+    copyTextToClipboard(
+      "npub1s4qx7qajsua9nykemks284y96768t7uyh2vgmttykw6lnfg0xpzqptgcuv"
+    );
     showCopiedMessage();
   });
 
@@ -23,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     nostrLink.appendChild(copiedMessage);
 
-    setTimeout(function() {
+    setTimeout(function () {
       nostrLink.removeChild(copiedMessage);
     }, 1500);
   }
 });
+
