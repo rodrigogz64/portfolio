@@ -264,36 +264,42 @@ body{
 }
 
 /* ------- Graph ------- */
-.skills-container ul {
-  list-style-type: none;
-}
-#skills {
+
+.Skills {
   margin: 40px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+#skills {
+  margin: 0 auto;
+  width: 40%;
 }
 #skills li {
   position: relative;
   margin-bottom: 32px;
   padding-left: 6px;
 }
+.bar_container,
+.bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
 .bar_container {
-  position: relative;
   bottom: -8px;
   width: 100%;
   background-color: #333;
   text-align: right;
-  height: 5px; 
-  border-radius: 5px;
 }
 .bar {
-  position: absolute;
-  left: 0;
   top: 0;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #19f; 
 }
 .pct {
   position: absolute;
