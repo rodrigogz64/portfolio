@@ -267,13 +267,13 @@ body{
 .skills-container ul {
   list-style-type: none;
 }
-.skills {
+#skills {
   margin: 40px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.skills li {
+#skills li {
   position: relative;
   margin-bottom: 32px;
   padding-left: 6px;
