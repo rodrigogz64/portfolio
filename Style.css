@@ -259,19 +259,13 @@ body{
 /* ------- Skills Section ------- */
 
 
-.skills-container{
-  margin: 40px 10px;
-}
-
-/* ------- Graph ------- */
 
 .Skills {
-  margin: 40px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 80px;
 }
 
+
+/* ------- Graph ------- */
 ul {
   list-style-type: none;
 }
@@ -311,7 +305,7 @@ ul {
 
 /* ------- Projects Section ------- */
 .projects h2{
-  margin-left: 60px;
+  margin-left: 80px;
 }
 
 .Cards{
