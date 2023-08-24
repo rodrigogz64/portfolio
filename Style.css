@@ -331,15 +331,16 @@ ul {
 .Card{
   overflow: hidden; 
   border-radius: 0.25rem; 
-  max-width: 24rem; 
-  border-radius: 30px;
+  max-width: 26rem; 
+  max-height: 28rem;
+  border-radius: 20px;
   background-color: #18212f;
   margin-left: 40px;
 }
 
 .Card img{
-  width: 100%; 
-  border-radius: 12px;
+  width: 100%;
+  padding: 10px 10px;
 }
 
 .Card-header{
@@ -353,6 +354,7 @@ ul {
   font-size: 1.25rem;
   line-height: 1.75rem; 
   font-weight: 700; 
+  margin-bottom: 5px;
 }
 
 .Card-tech {
@@ -362,8 +364,7 @@ ul {
 }
 
 .Card-tech img {
-  height: 30px;
-  margin-left: 10px;
+  height: 55px;
 }
 
 
@@ -422,7 +423,6 @@ ul {
   .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0 10px;
   }
 
@@ -529,6 +529,10 @@ ul {
   .Card {
     max-width: 80%;
     margin-bottom: 30px;
+  }
+
+  .Card-tech img {
+    height: 45px;
   }
 
   .Card-buttons span {
