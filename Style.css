@@ -94,6 +94,7 @@ body{
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1.3s;
+  word-wrap: break-word;
 }
 
 .home-sci {
@@ -258,26 +259,32 @@ body{
 
 /* ------- Skills Section ------- */
 
-
-
 .Skills {
   padding: 80px;
+}
+
+.skills-container {
+  margin-top: 40px;
 }
 
 
 /* ------- Graph ------- */
 ul {
   list-style-type: none;
+  margin-top: 40px;
 }
+
 #skills {
   margin: 0 auto;
   width: 40%;
 }
+
 #skills li {
   position: relative;
   margin-bottom: 32px;
   padding-left: 6px;
 }
+
 .bar_container,
 .bar {
   position: absolute;
@@ -286,15 +293,18 @@ ul {
   border-radius: 5px;
   content: "";
 }
+
 .bar_container {
   bottom: -8px;
   width: 100%;
   background-color: #333;
   text-align: right;
 }
+
 .bar {
   top: 0;
 }
+
 .pct {
   position: absolute;
   top: -19px;
@@ -410,13 +420,13 @@ ul {
 /* ------- Responsive for smaller screens ------- */
 @media screen and (max-width: 768px) {
   .home {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 10px;
+    padding: 0 10px;
   }
 
   .home-content {
-    margin-top: 40px;
     margin-left: 0;
     text-align: center;
   }  
@@ -425,24 +435,23 @@ ul {
     margin: 0 10px;
     margin-top: 8px;
     text-align: justify;
+    font-size: 12px;
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .home-content h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  .navbar {
-    margin-right: 0;
-    margin-top: 20px;
+  .header {
+    position: static;
   }
 
   .navbar a {
-    font-size: 16px;
-    margin-left: 20px;
+    display: none;
   }
 
   .home-sci{
@@ -479,6 +488,52 @@ ul {
     height: 300px;
   }
   
+  .Skills {
+    padding: 20px;
+  }
+
+  .skills-container {
+    margin-top: 20px; 
+  }
+
+  ul {
+    margin-top: 20px;
+  }
+
+  #skills {
+    width: 80%; 
+  }
+
+  #skills li {
+    margin-bottom: 30px;
+  }
+
+  .bar_container,
+  .bar {
+    height: 3px; 
+  }
+
+
+
+  /* Projects Responsive*/
+  .projects h2 {
+    margin-left: 20px;
+  }
+
+  .Cards {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .Card {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .Card-buttons span {
+    padding: 8px 16px;
+  }
 }
 
 
