@@ -418,7 +418,7 @@ ul {
 }
 
 /* ------- Responsive for smaller screens ------- */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .home {
     display: flex;
     flex-direction: column;
